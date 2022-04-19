@@ -36,6 +36,9 @@ Plugin 'dyng/ctrlsf.vim'
 "autocompletion
 Plugin 'tabnine/YouCompleteMe'
 
+"highlighting todos and fixmes
+Plugin 'sakshamgupta05/vim-todo-highlight'
+
 call vundle#end()
 filetype plugin indent on
 
