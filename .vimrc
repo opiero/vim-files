@@ -14,12 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'sheerun/vim-polyglot'
 
 " Colorschemes
-Plugin 'cocopon/iceberg.vim'
-Plugin 'arcticicestudio/nord-vim'
-Plugin 'Badacadabra/vim-archery'
-Plugin 'kristijanhusak/vim-hybrid-material'
-Plugin 'scheakur/vim-scheakur'
 Plugin 'lifepillar/vim-solarized8'
+Plugin 'morhetz/gruvbox'
 
 "File system explorer
 Plugin 'preservim/nerdtree'
@@ -115,4 +111,4 @@ if has('persistent_undo')
 endif
 
 "doesnt load ycm
-"let g:loaded_youcompleteme = 1
+let g:loaded_youcompleteme = 1
