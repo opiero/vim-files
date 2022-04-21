@@ -63,7 +63,6 @@ let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
 let NERDTreeShowLineNumbers = 0 " Hide line numbers
 let NERDTreeMinimalMenu = 1     " Use the minimal menu (m)
-"let NERDTreeWinPos = “left”     " Panel opens on the left side
 let NERDTreeWinSize = 31        " Set panel width to 31 columns
 
 nmap <C-E> :NERDTreeToggle<CR>
@@ -77,7 +76,7 @@ let g:tagbar_position = 'botright vertical'
 " Mapping to open and close the panel
 nmap <C-[> :TagbarToggle<CR>
 
-"Mode Settings
+"Mode Cursor Settings
 
 let &t_SI.="\e[5 q" "SI = INSERT mode
 let &t_SR.="\e[4 q" "SR = REPLACE mode
@@ -112,3 +111,11 @@ endif
 
 "doesnt load ycm
 let g:loaded_youcompleteme = 1
+
+"Bracket pairing
+inoremap { {}<Esc>ha
+inoremap ( ()<Esc>ha
+inoremap [ []<Esc>ha
+inoremap " ""<Esc>ha
+inoremap ' ''<Esc>ha
+inoremap ` ``<Esc>ha
