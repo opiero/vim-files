@@ -7,15 +7,22 @@ set rtp+=~/.vim/bundle/Vundle.vim
 " Download plug-ins to the ~/.vim/plugged/ directory
 call vundle#begin('~/.vim/plugged')
 
+Plugin 'vim-scripts/Align'
+
 " Let Vundle manage Vundle
 Plugin 'VundleVim/Vundle.vim'
 
 " Syntax highlighting package
 Plugin 'sheerun/vim-polyglot'
+Plugin 'vim-scripts/SQLUtilities'
 
 " Colorschemes
 Plugin 'lifepillar/vim-solarized8'
 Plugin 'morhetz/gruvbox'
+Plugin 'flazz/vim-colorschemes'
+
+" Git wrapper
+Plugin 'tpope/vim-fugitive'
 
 "File system explorer
 Plugin 'preservim/nerdtree'
@@ -39,11 +46,12 @@ set rnu     " Enable relative line numbers
 syntax on  " Enable syntax highlighting
 
 set autoindent "copy ident from current line when starting a new line"
+set smartindent "smart vim indentation
 
 " How many columns of whitespace a \t is worth
 set tabstop=4
 
-" How many columns of whitespace a "level of indentation" is worth
+" How many columns of whitespace a level of indentation is worth
 set shiftwidth=4
 
 " Use spaces when tabbing
@@ -58,7 +66,6 @@ set mouse=a            " Enable mouse drag on window splits
 
 set background=light
 colorscheme solarized8_flat
-
 let NERDTreeShowBookmarks = 1   " Show the bookmarks table
 let NERDTreeShowHidden = 1      " Show hidden files
 let NERDTreeShowLineNumbers = 0 " Hide line numbers
@@ -112,10 +119,10 @@ endif
 "doesnt load ycm
 let g:loaded_youcompleteme = 1
 
-"Bracket pairing
+
 inoremap { {}<Esc>ha
 inoremap ( ()<Esc>ha
 inoremap [ []<Esc>ha
-inoremap " ""<Esc>ha
-inoremap ' ''<Esc>ha
-inoremap ` ``<Esc>ha
+"inoremap " ""<Esc>ha
+"inoremap ' ''<Esc>ha
+"inoremap ` ``<Esc>ha
